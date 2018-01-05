@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2017
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Handheld3DCamUnity", "Handheld3DCamUnity.csproj", "{63524DA7-6903-C86E-E326-6D5E360596A3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Handheld3DCamUnity.Editor", "Handheld3DCamUnity.Editor.csproj", "{3CB18ED2-40A6-ABC6-0C70-5DBBF5174D59}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{63524DA7-6903-C86E-E326-6D5E360596A3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{63524DA7-6903-C86E-E326-6D5E360596A3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{63524DA7-6903-C86E-E326-6D5E360596A3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{63524DA7-6903-C86E-E326-6D5E360596A3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3CB18ED2-40A6-ABC6-0C70-5DBBF5174D59}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3CB18ED2-40A6-ABC6-0C70-5DBBF5174D59}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3CB18ED2-40A6-ABC6-0C70-5DBBF5174D59}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3CB18ED2-40A6-ABC6-0C70-5DBBF5174D59}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
