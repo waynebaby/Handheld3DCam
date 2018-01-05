@@ -177,7 +177,7 @@ Camera:
     y: 0
     width: 1
     height: 1
-  near clip plane: 0.1
+  near clip plane: 0.3
   far clip plane: 1000
   field of view: 60
   orthographic: 0
@@ -213,7 +213,7 @@ Camera:
     y: 0
     width: 1
     height: 1
-  near clip plane: 0.1
+  near clip plane: 0.3
   far clip plane: 1000
   field of view: 60
   orthographic: 0
@@ -287,6 +287,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   leftEye: {fileID: 1860448574613126}
   rightEye: {fileID: 1529352211972892}
+  Projected: {x: 0, y: 0, z: 0}
 --- !u!135 &135565507134000514
 SphereCollider:
   m_ObjectHideFlags: 1
