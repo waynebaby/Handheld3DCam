@@ -738,8 +738,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   StereoSeparation: 0.022
-  LeftEye: {fileID: 0}
-  RightEye: {fileID: 0}
+  LeftEye: {fileID: 20566650032887344}
+  RightEye: {fileID: 20209045196701576}
   NearClipPlane_OpaqueDisplay: 0.3
   CameraClearFlags_OpaqueDisplay: 1
   BackgroundColor_OpaqueDisplay: {r: 0, g: 0, b: 0, a: 1}

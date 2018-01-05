@@ -37,6 +37,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4696931957894878}
   - component: {fileID: 114902506866183854}
+  - component: {fileID: 114576024715720548}
   m_Layer: 0
   m_Name: HandheldScreen
   m_TagString: Untagged
@@ -184,6 +185,17 @@ MeshFilter:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1729112919491862}
   m_Mesh: {fileID: 10210, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &114576024715720548
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1866149778234804}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1af1a848474bcc84d943801145f17d83, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &114902506866183854
 MonoBehaviour:
   m_ObjectHideFlags: 1
