@@ -285,9 +285,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8fdf7de2173a65e449a78a4a27ef58bc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  leftEye: {fileID: 1860448574613126}
-  rightEye: {fileID: 1529352211972892}
-  Projected: {x: 0, y: 0, z: 0}
+  PupleDistance: 0.067
 --- !u!135 &135565507134000514
 SphereCollider:
   m_ObjectHideFlags: 1

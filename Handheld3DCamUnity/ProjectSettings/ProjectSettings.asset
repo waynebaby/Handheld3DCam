@@ -588,7 +588,7 @@ PlayerSettings:
     WindowsStoreApps:
       HumanInterfaceDevice: False
       InternetClient: False
-      InternetClientServer: True
+      InternetClientServer: False
       Microphone: True
       PrivateNetworkClientServer: False
       SpatialPerception: False

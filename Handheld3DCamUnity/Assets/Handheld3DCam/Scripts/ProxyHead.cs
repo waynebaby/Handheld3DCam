@@ -7,24 +7,33 @@ public class ProxyHead : MonoBehaviour
 {
 
     // Use this for initialization
-    public GameObject leftEye;
-    public GameObject rightEye;
-    public Vector3 Projected;
+    GameObject leftEye;
+    GameObject rightEye;
+    public Vector3 Projected { get; private set; }
+    public float PupilDistance = 0.067f;
+    private void Start()
+    {
+        var eyes = this.GetComponentsInChildren<Camera>();
+        var eye0 = eyes[0].gameObject;
+        var eye1 = eyes[1].gameObject;
+        leftEye = eye0.name == "ProxyEyeLeft" ? eye0:eye1;
+        rightEye = object.ReferenceEquals(leftEye, eye0) ? eye1 : eye0;
 
-    // Update is called once per frame
+    }
     void Update()
     {
-        var direction = HandheldScreen.Instance.transform.position - Camera.main.transform.position;
+
+        var planCenter = HandheldScreen.Instance.transform.position;
+        var head = rightEye.transform.parent.transform;
+
         var mcTrans = CameraCache.Main.transform;
-        var camleft = mcTrans.position - mcTrans.rotation * (Vector3.left * 0.031f);
-        var camright = mcTrans.position + mcTrans.rotation * (Vector3.left * 0.031f);
-        var eyesVector = camleft - camright;
-        Projected = Vector3.ProjectOnPlane(eyesVector, direction);
+        var camLeft = mcTrans.position + mcTrans.rotation * (Vector3.left * PupilDistance/2);
+        var camRight = mcTrans.position + mcTrans.rotation * (Vector3.right * PupilDistance/2);
+   
+        var leftCamProjeted = camLeft - planCenter;
+        var rightCamProjeted = camRight - planCenter;
 
-        //var rot = Quaternion.Euler(projected.normalized);
-
-        //gameObject.transform.localRotation = rot;
-        rightEye.transform.localPosition = leftEye.transform.localPosition  + Projected;
-
+        rightEye.transform.localPosition = head.localPosition + rightCamProjeted;
+        leftEye.transform.localPosition = head.localPosition + leftCamProjeted;
     }
 }

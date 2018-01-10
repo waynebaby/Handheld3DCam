@@ -5,6 +5,5 @@ using UnityEngine;
 
 public class HandheldScreen : Singleton<HandheldScreen>
 {
-
-
+ 
 }

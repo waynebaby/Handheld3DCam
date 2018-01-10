@@ -36,8 +36,8 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 4696931957894878}
-  - component: {fileID: 114902506866183854}
   - component: {fileID: 114576024715720548}
+  - component: {fileID: 114628206908639940}
   m_Layer: 0
   m_Name: HandheldScreen
   m_TagString: Untagged
@@ -196,7 +196,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1af1a848474bcc84d943801145f17d83, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &114902506866183854
+--- !u!114 &114628206908639940
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -207,5 +207,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ac8d5b128a1d8204fb76c86f47b75912, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  PivotAxis: 0
+  PivotAxis: 1
   TargetTransform: {fileID: 0}
