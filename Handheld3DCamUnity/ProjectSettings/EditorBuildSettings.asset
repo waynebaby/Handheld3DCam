@@ -4,4 +4,7 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Handheld3DCam/Scenes/TestHoloLensScene.unity
+    guid: 9d26601dffbb78d40ac83e90b1c18b28
